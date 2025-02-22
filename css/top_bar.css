@@ -72,7 +72,7 @@ body {
     font-weight: 600;
     color: white;
     line-height: 1.2;
-    margin-right: 300px;
+    margin-right: 200px;
 }
 
 :lang(el) .nav-links .company-name {
@@ -80,7 +80,7 @@ body {
     font-weight: 600;
     color: white;
     line-height: 1.2;
-    margin-right: 300px;
+    margin-right: 200px;
 }
 
 /* Navigation link styling */
