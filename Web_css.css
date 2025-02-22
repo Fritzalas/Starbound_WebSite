@@ -57,12 +57,14 @@ body {
     width: 100px;
     height: 100px;
     margin-right: 10px; /* Space between logo and text */
+    cursor: pointer;
 }
 
 :lang(el) .nav-links .logo img {
     width: 100px;
     height: 100px;
     margin-right: 10px; /* Space between logo and text */
+    cursor: pointer;
 }
 
 .nav-links .company-name {

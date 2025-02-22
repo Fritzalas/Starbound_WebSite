@@ -11,7 +11,7 @@
     <video class="bg-video" autoplay muted loop>
         <source src="animations/top_bar_animation.mp4" type="video/mp4">
     </video>
-    <li class="logo">
+    <li class="logo" onclick="refreshPage()">
         <img src="Icons/starbound_team_logo.svg" alt="Company Logo" class="logo-img">
         <span class="company-name">StarBound<br>UTH Team - IEEE</span>
     </li>
@@ -30,5 +30,6 @@
 </ul>
 <script src="functions/ActivateButton.js"></script>
 <script slot="function" src="functions/language.js"></script>
+<script slot="function" src="functions/refresh.js"></script>
 </body>
 </html>
