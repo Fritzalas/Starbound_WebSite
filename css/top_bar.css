@@ -18,8 +18,8 @@ body {
     display: flex;
     justify-content: space-between; /* Spread out items */
     align-items: center; /* Vertically center items */
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 0 0 12px 12px;
+    background: transparent;
+    border-radius: 0 0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     position: fixed; /* Make it fixed at the top */
     top: 0; /* Position at the top */
@@ -30,7 +30,7 @@ body {
     padding: 10px 20px; /* Add some padding to space out content */
 }
 
-.bg-video {
+.bg-svg  {
     position: absolute; /* Position video behind content */
     top: 0;
     left: 0;
@@ -96,7 +96,7 @@ body {
 
 .nav-links li a {
     position: relative;
-    color: white;
+    color: black;
     font-size: 20px;
     font-weight: 500;
     padding: 6px 0;
@@ -107,7 +107,7 @@ body {
 /* Example: You can modify font size for Greek language if needed */
 :lang(el) .nav-links li a {
     position: relative;
-    color: white;
+    color: black;
     font-size: 20px;
     font-weight: 500;
     padding: 6px 0;
