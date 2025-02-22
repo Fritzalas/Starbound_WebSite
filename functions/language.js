@@ -1,8 +1,5 @@
 // Language change function
 function changeLanguage(language) {
-    // Get all elements with the data-en and data-el attributes
-    const elements = document.querySelectorAll('[data-en], [data-el]');
-
     // Update the <html> lang attribute
     if (language === 'en') {
         document.documentElement.setAttribute('lang', 'en');  // Set language to English
