@@ -9,15 +9,30 @@ body {
     height: 100vh;
     background: bisque;
 }
-/* Logo and company name styling */
+/* Styling for the entire navigation bar */
+.nav-links {
+    display: flex;
+    justify-content: space-between; /* Spread out items */
+    align-items: center; /* Vertically center items */
+    background: #fff;
+    padding: 15px 30px; /* Adjust padding for better spacing */
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+/* Add space between the logo and the left edge of the screen */
 .nav-links .logo {
     display: flex;
     align-items: center;
-    margin-right: 20px; /* Space between logo and links */
+    margin-left: 10px; /* 10px space from the left edge */
 }
 
 .nav-links .logo img {
-    width: 100px; /* Adjust size of logo */
+    width: 100px;
     height: 100px;
     margin-right: 10px; /* Space between logo and text */
 }
@@ -26,22 +41,16 @@ body {
     font-size: 22px;
     font-weight: 600;
     color: #333;
+    line-height: 1.2;
+    margin-right: 300px;
 }
-.nav-links {
-    display: flex;
-    align-items: center;
-    background: #fff;
-    padding: 20px 15px;
-    border-radius: 12px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
+
+/* Navigation link styling */
 .nav-links li {
     list-style: none;
-    margin: 0 12px;
+    margin: 0 20px; /* Spacing between the links */
 }
+
 .nav-links li a {
     position: relative;
     color: #333;
@@ -51,6 +60,7 @@ body {
     text-decoration: none;
     transition: color 0.4s ease;
 }
+
 .nav-links li a:before {
     content: '';
     position: absolute;
@@ -62,34 +72,57 @@ body {
     border-radius: 12px;
     transition: all 0.4s ease;
 }
+
 .nav-links li a:hover:before {
     width: 100%;
 }
+
 .nav-links li.center a:before {
     left: 50%;
     transform: translateX(-50%);
 }
+
 .nav-links li.upward a:before {
     width: 100%;
     bottom: -5px;
     opacity: 0;
 }
+
 .nav-links li.upward a:hover:before {
     bottom: 0;
     opacity: 1;
 }
+
 .nav-links li.forward a:before {
     width: 100%;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.4s ease;
 }
+
 .nav-links li.forward a:hover:before {
     transform: scaleX(1);
     transform-origin: left;
 }
 
-/* Make the 'active' class text color green */
 .nav-links li a.active {
     color: deepskyblue !important;  /* Force the green color */
+}
+/* Styling for the flags */
+.nav-links .flags {
+    display: flex;
+    flex-direction: column; /* Stack flags vertically */
+    align-items: center;
+    margin-left: 20px; /* Space between flags and other content */
+}
+
+.nav-links .flag {
+    width: 40px; /* Adjust size of flags */
+    height: auto;
+    margin: 5px 0; /* Space between the flags */
+    cursor: pointer;
+}
+
+.nav-links .flag:hover {
+    opacity: 0.7; /* Slight fade on hover */
 }

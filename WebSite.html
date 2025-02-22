@@ -12,13 +12,20 @@
         <img src="Icons/starbound_team_logo.svg" alt="Company Logo" class="logo-img">
         <span class="company-name">StarBound<br>UTH Team - IEEE</span>
     </li>
-    <li><a href="#" onclick="setActive(this)" class="active">Home</a></li>
-    <li class="center"><a href="#" onclick="setActive(this)">Our Team</a></li>
-    <li class="upward"><a href="#" onclick="setActive(this)">Supporters</a></li>
-    <li class="upward"><a href="#" onclick="setActive(this)">Lab</a></li>
-    <li class="upward"><a href="#" onclick="setActive(this)">News</a></li>
-    <li class="forward"><a href="#" onclick="setActive(this)">Contact</a></li>
+    <!-- Navigation Links -->
+    <li><a href="#" onclick="setActive(this)" data-en="Home" class="active" data-el="Αρχική">Home</a></li>
+    <li class="center"><a href="#" onclick="setActive(this)" data-en="Our Team" data-el="Η Ομάδα Μας">Our Team</a></li>
+    <li class="upward"><a href="#" onclick="setActive(this)" data-en="Supporters" data-el="Υποστηρικτές">Supporters</a></li>
+    <li class="upward"><a href="#" onclick="setActive(this)" data-en="Lab" data-el="Εργαστήριο">Lab</a></li>
+    <li class="upward"><a href="#" onclick="setActive(this)" data-en="Contact" data-el="Επικοινωνία">Contact</a></li>
+    <li class="forward"><a href="#" onclick="setActive(this)" data-en="News" data-el="Νέα">News</a></li>
+
+    <li class="flags">
+        <img src="Icons/Flag_of_the_United_Kingdom.svg" alt="English" class="flag" onclick="changeLanguage('en')">
+        <img src="Icons/Flag_of_Greece.svg" alt="Greek" class="flag" onclick="changeLanguage('el')">
+    </li>
 </ul>
 <script src="functions/ActivateButton.js"></script>
+<script slot="function" src="functions/language.js"></script>
 </body>
 </html>
